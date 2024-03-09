@@ -387,6 +387,64 @@ ul {
     filter: brightness(0) invert(1);
 }
 
+.faq-page {
+    /* background-color: #eee; */
+    color: #444;
+    cursor: pointer;
+    padding: 20px 10px;
+    border: none;
+    width: 90;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+}
+
+.faq-body {
+    margin: auto;
+    padding: auto;
+
+}
+
+.container-xxl {
+    width: 60vw;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    box-shadow: 0 0 20px #e0dfdf;
+    border-radius: 5px;
+}
+
+.active,
+.faq-page:hover {
+    background-color: #4ba1f8;
+    box-shadow: 0 0 20px #e0dfdf;
+}
+
+.faq-body {
+    padding: 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.faq-body p{
+    color: grey;
+    font-size: 17px;
+}
+
+.faq-page:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+}
+
 /* Remove number arrows from input type number */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
